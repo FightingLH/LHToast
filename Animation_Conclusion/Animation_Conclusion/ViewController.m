@@ -8,11 +8,14 @@
 
 #import "ViewController.h"
 #import "CircleViewController.h"
+#import "TransitionsViewController.h"
+#import "CustomPushAnimation.h"
 
 @interface ViewController ()
-<UITableViewDelegate,UITableViewDataSource>
+<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArray;
+@property  (nonatomic, strong)  CustomPushAnimation *customPush;
 @end
 
 @implementation ViewController
@@ -67,11 +70,27 @@
             [self.navigationController pushViewController:circle animated:YES];
         }
             break;
-            
+        case 1:
+        {
+            self.navigationController.delegate = self;
+            self.customPush = [[CustomPushAnimation alloc]init];
+            TransitionsViewController *trans = [[TransitionsViewController alloc]init];
+            [self.navigationController pushViewController:trans animated:YES];
+        }
+            break;
         default:
             break;
     }
 }
+- (id<UIViewControllerAnimatedTransitioning>) navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
 
+{
+    //push的时候用我们自己定义的customPush
+    if (operation == UINavigationControllerOperationPush) {
+        return self.customPush;
+    }else{
+        return nil;
+    }
+}
 
 @end

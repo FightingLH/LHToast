@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"圆形进度条";
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blackColor];
     LHCircleView *circleView = [[LHCircleView alloc]initWithFrame:CGRectMake(50, 100, 150, 150)];
