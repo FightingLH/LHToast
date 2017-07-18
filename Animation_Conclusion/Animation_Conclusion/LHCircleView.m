@@ -14,9 +14,10 @@ CGFloat endAngle = M_PI * 2 -M_PI/2;
 @property  (nonatomic, strong) CAShapeLayer *progressLayer;
 @property  (nonatomic, strong) UILabel      *percentLabel;
 @property  (nonatomic, assign) CGFloat progress;
-@property  (nonatomic, strong) NSTimer *timer;
+@property  (nonatomic, strong)   NSTimer *timer;
 @property  (nonatomic, assign) CGFloat lastTime;
 @end
+
 @implementation LHCircleView
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -45,20 +46,26 @@ CGFloat endAngle = M_PI * 2 -M_PI/2;
     [self addSubview:self.percentLabel];
     [self.layer addSublayer:self.progressLayer];
     self.lastTime = 0.0;
-    self.timer = [NSTimer timerWithTimeInterval:0.03 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        [self beginAnimated];
-    }];
-    [[NSRunLoop currentRunLoop]addTimer:self.timer forMode:NSDefaultRunLoopMode];
+    self.timer = [NSTimer timerWithTimeInterval:0.03 target:self selector:@selector(handleGraceTimer:) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+
+}
+
+- (void)handleGraceTimer:(NSTimer *)timer
+{
+    [self beginAnimated];
 }
 
 - (void)beginAnimated
 {
-    self.lastTime += 0.01;
-    if (self.lastTime > 1) {
-        
-        [self.timer invalidate];
+    if (self.timer.isValid) {
+        self.lastTime += 0.01;
+        if (self.lastTime > 1) {
+            
+            [self.timer invalidate];
+        }
+        self.progress = self.lastTime;
     }
-    self.progress = self.lastTime;
 }
 
 - (void)setProgress:(CGFloat)progress

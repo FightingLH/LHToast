@@ -10,6 +10,7 @@
 #import "CircleViewController.h"
 #import "TransitionsViewController.h"
 #import "CustomPushAnimation.h"
+#import "CATranstionViewController.h"
 
 @interface ViewController ()
 <UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
@@ -76,6 +77,12 @@
             self.customPush = [[CustomPushAnimation alloc]init];
             TransitionsViewController *trans = [[TransitionsViewController alloc]init];
             [self.navigationController pushViewController:trans animated:YES];
+        }
+            break;
+            case 2:
+        {
+            CATranstionViewController *tra = [[CATranstionViewController alloc]init];
+            [self.navigationController pushViewController:tra animated:YES];
         }
             break;
         default:

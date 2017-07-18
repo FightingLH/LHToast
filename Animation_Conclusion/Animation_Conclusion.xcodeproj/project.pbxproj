@@ -20,6 +20,12 @@
 		EB869A941F1DDE130084AD2C /* CustomPushAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A911F1DDE130084AD2C /* CustomPushAnimation.m */; };
 		EB869A951F1DDE130084AD2C /* CustomPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A931F1DDE130084AD2C /* CustomPopAnimation.m */; };
 		EB869A981F1DDE3A0084AD2C /* TransitionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A971F1DDE3A0084AD2C /* TransitionsViewController.m */; };
+		EB869A9C1F1DFAF00084AD2C /* CATranstionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A9B1F1DFAF00084AD2C /* CATranstionViewController.m */; };
+		EB869AA31F1DFDA70084AD2C /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB869A9E1F1DFDA70084AD2C /* 3.jpg */; };
+		EB869AA41F1DFDA70084AD2C /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB869A9F1F1DFDA70084AD2C /* 4.jpg */; };
+		EB869AA51F1DFDA70084AD2C /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB869AA01F1DFDA70084AD2C /* 5.jpg */; };
+		EB869AA61F1DFDA70084AD2C /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB869AA11F1DFDA70084AD2C /* 2.jpg */; };
+		EB869AA71F1DFDA70084AD2C /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB869AA21F1DFDA70084AD2C /* 1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +72,13 @@
 		EB869A931F1DDE130084AD2C /* CustomPopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPopAnimation.m; sourceTree = "<group>"; };
 		EB869A961F1DDE3A0084AD2C /* TransitionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionsViewController.h; sourceTree = "<group>"; };
 		EB869A971F1DDE3A0084AD2C /* TransitionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionsViewController.m; sourceTree = "<group>"; };
+		EB869A9A1F1DFAF00084AD2C /* CATranstionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATranstionViewController.h; sourceTree = "<group>"; };
+		EB869A9B1F1DFAF00084AD2C /* CATranstionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATranstionViewController.m; sourceTree = "<group>"; };
+		EB869A9E1F1DFDA70084AD2C /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		EB869A9F1F1DFDA70084AD2C /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		EB869AA01F1DFDA70084AD2C /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		EB869AA11F1DFDA70084AD2C /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		EB869AA21F1DFDA70084AD2C /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +129,7 @@
 		EB869A541F1DCCE90084AD2C /* Animation_Conclusion */ = {
 			isa = PBXGroup;
 			children = (
+				EB869A991F1DFAB70084AD2C /* CatranstionAnimation */,
 				EB869A8F1F1DDDE10084AD2C /* TransitionsAnimation */,
 				EB869A881F1DCD3C0084AD2C /* CircleAnimation */,
 				EB869A581F1DCCE90084AD2C /* AppDelegate.h */,
@@ -179,6 +193,28 @@
 				EB869A971F1DDE3A0084AD2C /* TransitionsViewController.m */,
 			);
 			name = TransitionsAnimation;
+			sourceTree = "<group>";
+		};
+		EB869A991F1DFAB70084AD2C /* CatranstionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				EB869A9D1F1DFD9B0084AD2C /* images */,
+				EB869A9A1F1DFAF00084AD2C /* CATranstionViewController.h */,
+				EB869A9B1F1DFAF00084AD2C /* CATranstionViewController.m */,
+			);
+			name = CatranstionAnimation;
+			sourceTree = "<group>";
+		};
+		EB869A9D1F1DFD9B0084AD2C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EB869A9E1F1DFDA70084AD2C /* 3.jpg */,
+				EB869A9F1F1DFDA70084AD2C /* 4.jpg */,
+				EB869AA01F1DFDA70084AD2C /* 5.jpg */,
+				EB869AA11F1DFDA70084AD2C /* 2.jpg */,
+				EB869AA21F1DFDA70084AD2C /* 1.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +284,7 @@
 				TargetAttributes = {
 					EB869A511F1DCCE90084AD2C = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 46HK7Y94KA;
+						DevelopmentTeam = C78VJKGV2J;
 						ProvisioningStyle = Automatic;
 					};
 					EB869A6A1F1DCCE90084AD2C = {
@@ -292,7 +328,12 @@
 			files = (
 				EB869A651F1DCCE90084AD2C /* LaunchScreen.storyboard in Resources */,
 				EB869A621F1DCCE90084AD2C /* Assets.xcassets in Resources */,
+				EB869AA61F1DFDA70084AD2C /* 2.jpg in Resources */,
 				EB869A601F1DCCE90084AD2C /* Main.storyboard in Resources */,
+				EB869AA51F1DFDA70084AD2C /* 5.jpg in Resources */,
+				EB869AA71F1DFDA70084AD2C /* 1.jpg in Resources */,
+				EB869AA41F1DFDA70084AD2C /* 4.jpg in Resources */,
+				EB869AA31F1DFDA70084AD2C /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +360,7 @@
 			files = (
 				EB869A5D1F1DCCE90084AD2C /* ViewController.m in Sources */,
 				EB869A5A1F1DCCE90084AD2C /* AppDelegate.m in Sources */,
+				EB869A9C1F1DFAF00084AD2C /* CATranstionViewController.m in Sources */,
 				EB869A8B1F1DCD680084AD2C /* CircleViewController.m in Sources */,
 				EB869A981F1DDE3A0084AD2C /* TransitionsViewController.m in Sources */,
 				EB869A941F1DDE130084AD2C /* CustomPushAnimation.m in Sources */,
@@ -420,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -463,7 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -475,7 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 46HK7Y94KA;
+				DEVELOPMENT_TEAM = C78VJKGV2J;
 				INFOPLIST_FILE = Animation_Conclusion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "feeyo.Animation-Conclusion";
@@ -487,7 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 46HK7Y94KA;
+				DEVELOPMENT_TEAM = C78VJKGV2J;
 				INFOPLIST_FILE = Animation_Conclusion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "feeyo.Animation-Conclusion";
