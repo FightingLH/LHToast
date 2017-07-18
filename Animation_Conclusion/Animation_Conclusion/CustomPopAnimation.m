@@ -10,7 +10,6 @@
 
 @implementation CustomPopAnimation
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
-
 {
     return 0.5;
 }

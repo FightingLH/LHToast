@@ -15,9 +15,10 @@
 
 @implementation TransitionsViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    self.title = @"转场动画";
+    self.title = @"转场动画-push-自定义动画效果";
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"back" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
@@ -31,25 +32,18 @@
 }
 
 - (id<UIViewControllerAnimatedTransitioning>) navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
-
 {
-    
     if (operation == UINavigationControllerOperationPush) {
-        
         return nil;
-        
     }else if (operation == UINavigationControllerOperationPop) {
-        
         return self.customPop;
-        
     }else{
-        
         return nil;
-        
     }
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
