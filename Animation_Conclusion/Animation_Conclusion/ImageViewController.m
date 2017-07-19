@@ -35,7 +35,7 @@
 {
     [super viewWillAppear:animated];
     
-    [self.animatedImagesView startAnimating:JLAnimatedType_Translation];
+    [self.animatedImagesView startAnimating:JLAnimatedType_Largen];
 }
 
 - (void)viewDidDisappear:(BOOL)animated

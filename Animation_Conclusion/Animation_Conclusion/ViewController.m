@@ -12,6 +12,7 @@
 #import "CustomPushAnimation.h"
 #import "CATranstionViewController.h"
 #import "ImageViewController.h"
+#import "CGAffineViewController.h"
 
 @interface ViewController ()
 <UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
@@ -90,6 +91,12 @@
         {
             ImageViewController *im = [[ImageViewController alloc]init];
             [self.navigationController pushViewController:im animated:YES];
+        }
+            break;
+            case 4:
+        {
+            CGAffineViewController *cg = [[CGAffineViewController alloc]init];
+            [self.navigationController pushViewController:cg animated:YES];
         }
             break;
         default:

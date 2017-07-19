@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB2CEA041F1EFDAA001C7923 /* CGAffineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CEA031F1EFDAA001C7923 /* CGAffineViewController.m */; };
+		EB2CEA071F1F2CF5001C7923 /* JSAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CEA051F1F2CF5001C7923 /* JSAnimatedImagesView.m */; };
 		EB869A571F1DCCE90084AD2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A561F1DCCE90084AD2C /* main.m */; };
 		EB869A5A1F1DCCE90084AD2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A591F1DCCE90084AD2C /* AppDelegate.m */; };
 		EB869A5D1F1DCCE90084AD2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A5C1F1DCCE90084AD2C /* ViewController.m */; };
@@ -49,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB2CEA021F1EFDAA001C7923 /* CGAffineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAffineViewController.h; sourceTree = "<group>"; };
+		EB2CEA031F1EFDAA001C7923 /* CGAffineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineViewController.m; sourceTree = "<group>"; };
+		EB2CEA051F1F2CF5001C7923 /* JSAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnimatedImagesView.m; sourceTree = "<group>"; };
+		EB2CEA061F1F2CF5001C7923 /* JSAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnimatedImagesView.h; sourceTree = "<group>"; };
 		EB869A521F1DCCE90084AD2C /* Animation_Conclusion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation_Conclusion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB869A561F1DCCE90084AD2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB869A581F1DCCE90084AD2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +121,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB2CEA011F1EFD5B001C7923 /* MoveByCGAffineTransform */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CEA061F1F2CF5001C7923 /* JSAnimatedImagesView.h */,
+				EB2CEA051F1F2CF5001C7923 /* JSAnimatedImagesView.m */,
+				EB2CEA021F1EFDAA001C7923 /* CGAffineViewController.h */,
+				EB2CEA031F1EFDAA001C7923 /* CGAffineViewController.m */,
+			);
+			name = MoveByCGAffineTransform;
+			sourceTree = "<group>";
+		};
 		EB869A491F1DCCE90084AD2C = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +155,7 @@
 		EB869A541F1DCCE90084AD2C /* Animation_Conclusion */ = {
 			isa = PBXGroup;
 			children = (
+				EB2CEA011F1EFD5B001C7923 /* MoveByCGAffineTransform */,
 				EB869AA81F1E11390084AD2C /* 视图动画 */,
 				EB869A991F1DFAB70084AD2C /* CatranstionAnimation */,
 				EB869A8F1F1DDDE10084AD2C /* TransitionsAnimation */,
@@ -392,6 +410,8 @@
 				EB869A941F1DDE130084AD2C /* CustomPushAnimation.m in Sources */,
 				EB869A951F1DDE130084AD2C /* CustomPopAnimation.m in Sources */,
 				EB869A571F1DCCE90084AD2C /* main.m in Sources */,
+				EB2CEA041F1EFDAA001C7923 /* CGAffineViewController.m in Sources */,
+				EB2CEA071F1F2CF5001C7923 /* JSAnimatedImagesView.m in Sources */,
 				EB869A8E1F1DCD720084AD2C /* LHCircleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,6 +652,7 @@
 				EB869A811F1DCCE90084AD2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB869A821F1DCCE90084AD2C /* Build configuration list for PBXNativeTarget "Animation_ConclusionTests" */ = {
 			isa = XCConfigurationList;
@@ -640,6 +661,7 @@
 				EB869A841F1DCCE90084AD2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB869A851F1DCCE90084AD2C /* Build configuration list for PBXNativeTarget "Animation_ConclusionUITests" */ = {
 			isa = XCConfigurationList;
@@ -648,6 +670,7 @@
 				EB869A871F1DCCE90084AD2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
