@@ -24,26 +24,26 @@
      self.animatedImagesView.delegate = self;
     self.animatedImagesView.userInteractionEnabled = YES;
     
-    
-    UIView *adView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 100)];
-    adView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:adView];
-    
-    UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(15, 200, [UIScreen mainScreen].bounds.size.width - 30, 200)];
-    bgView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:bgView];
-    
-    for (NSInteger i = 0; i< 5; i++) {
-        UIButton *testBtn = [[UIButton alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width -250)/6 *(i+1)+i*50, 450, 50, 50)];
-        testBtn.backgroundColor = [UIColor whiteColor];
-        [testBtn setTitle:[NSString stringWithFormat:@"%ld",i] forState:
-         UIControlStateNormal];
-        testBtn.layer.cornerRadius = 25;
-        testBtn.clipsToBounds = YES;
-        [testBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [testBtn addTarget:self action:@selector(toNext) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:testBtn];
-    }
+//    
+//    UIView *adView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 100)];
+//    adView.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:adView];
+//    
+//    UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(15, 200, [UIScreen mainScreen].bounds.size.width - 30, 200)];
+//    bgView.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:bgView];
+//    
+//    for (NSInteger i = 0; i< 5; i++) {
+//        UIButton *testBtn = [[UIButton alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width -250)/6 *(i+1)+i*50, 450, 50, 50)];
+//        testBtn.backgroundColor = [UIColor whiteColor];
+//        [testBtn setTitle:[NSString stringWithFormat:@"%ld",i] forState:
+//         UIControlStateNormal];
+//        testBtn.layer.cornerRadius = 25;
+//        testBtn.clipsToBounds = YES;
+//        [testBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//        [testBtn addTarget:self action:@selector(toNext) forControlEvents:UIControlEventTouchUpInside];
+//        [self.view addSubview:testBtn];
+//    }
   
     
 }
@@ -87,8 +87,9 @@
 
 - (void)dealloc
 {
+
     [_animatedImagesView removeFromSuperview];
-    
+
 }
 
 @end

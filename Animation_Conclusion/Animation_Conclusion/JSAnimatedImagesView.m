@@ -139,18 +139,7 @@
     }];
     
     /* Fade animation */
-    [UIView transitionWithView:imageViewToHide duration:kJSAnimatedImagesViewImageSwappingAnimationDuration options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
-        imageViewToShow.alpha = 1.0;
-        imageViewToHide.alpha = 0.0;
-    } completion:^(BOOL finished) {
-        if (finished)
-        {
-            imageViewToHide.transform = CGAffineTransformIdentity;
-        }
-    }];
-
-//    [UIView animateWithDuration:kJSAnimatedImagesViewImageSwappingAnimationDuration delay:kMovementAndTransitionTimeOffset options:UIViewAnimationOptionBeginFromCurrentState 
-//     | UIViewAnimationCurveEaseIn animations:^{
+//    [UIView transitionWithView:imageViewToHide duration:kJSAnimatedImagesViewImageSwappingAnimationDuration options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
 //        imageViewToShow.alpha = 1.0;
 //        imageViewToHide.alpha = 0.0;
 //    } completion:^(BOOL finished) {
@@ -159,6 +148,17 @@
 //            imageViewToHide.transform = CGAffineTransformIdentity;
 //        }
 //    }];
+
+    [UIView animateWithDuration:kJSAnimatedImagesViewImageSwappingAnimationDuration delay:kMovementAndTransitionTimeOffset options:UIViewAnimationOptionBeginFromCurrentState 
+     | UIViewAnimationCurveEaseIn animations:^{
+        imageViewToShow.alpha = 1.0;
+        imageViewToHide.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        if (finished)
+        {
+            imageViewToHide.transform = CGAffineTransformIdentity;
+        }
+    }];
 }
 
 - (void)reloadData
