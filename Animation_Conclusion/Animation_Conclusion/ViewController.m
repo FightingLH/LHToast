@@ -11,6 +11,7 @@
 #import "TransitionsViewController.h"
 #import "CustomPushAnimation.h"
 #import "CATranstionViewController.h"
+#import "ImageViewController.h"
 
 @interface ViewController ()
 <UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
@@ -83,6 +84,12 @@
         {
             CATranstionViewController *tra = [[CATranstionViewController alloc]init];
             [self.navigationController pushViewController:tra animated:YES];
+        }
+            break;
+            case 3:
+        {
+            ImageViewController *im = [[ImageViewController alloc]init];
+            [self.navigationController pushViewController:im animated:YES];
         }
             break;
         default:

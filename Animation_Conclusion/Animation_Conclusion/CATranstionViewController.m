@@ -30,7 +30,7 @@
 {
     
     //调用设置动画
-    [self setAnimationWithType:SXmovein duration:1.0 directionSubtype:SXmiddle];
+    [self setAnimationWithType:SXfade duration:1.0 directionSubtype:SXmiddle];
     
 }
 
@@ -120,7 +120,6 @@
     //动画加到图层上
     [self.view.layer addAnimation:ani forKey:nil];
 }
-
 
 
 - (void)didReceiveMemoryWarning {
