@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB2CEA041F1EFDAA001C7923 /* CGAffineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CEA031F1EFDAA001C7923 /* CGAffineViewController.m */; };
 		EB2CEA071F1F2CF5001C7923 /* JSAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CEA051F1F2CF5001C7923 /* JSAnimatedImagesView.m */; };
+		EB61DFB61F20413200C21C98 /* ShufflingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61DFB51F20413200C21C98 /* ShufflingViewController.m */; };
 		EB869A571F1DCCE90084AD2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A561F1DCCE90084AD2C /* main.m */; };
 		EB869A5A1F1DCCE90084AD2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A591F1DCCE90084AD2C /* AppDelegate.m */; };
 		EB869A5D1F1DCCE90084AD2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A5C1F1DCCE90084AD2C /* ViewController.m */; };
@@ -55,6 +56,8 @@
 		EB2CEA031F1EFDAA001C7923 /* CGAffineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineViewController.m; sourceTree = "<group>"; };
 		EB2CEA051F1F2CF5001C7923 /* JSAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnimatedImagesView.m; sourceTree = "<group>"; };
 		EB2CEA061F1F2CF5001C7923 /* JSAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnimatedImagesView.h; sourceTree = "<group>"; };
+		EB61DFB41F20413200C21C98 /* ShufflingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShufflingViewController.h; sourceTree = "<group>"; };
+		EB61DFB51F20413200C21C98 /* ShufflingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShufflingViewController.m; sourceTree = "<group>"; };
 		EB869A521F1DCCE90084AD2C /* Animation_Conclusion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation_Conclusion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB869A561F1DCCE90084AD2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB869A581F1DCCE90084AD2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +135,15 @@
 			name = MoveByCGAffineTransform;
 			sourceTree = "<group>";
 		};
+		EB61DFB31F2040D000C21C98 /* 轮播 */ = {
+			isa = PBXGroup;
+			children = (
+				EB61DFB41F20413200C21C98 /* ShufflingViewController.h */,
+				EB61DFB51F20413200C21C98 /* ShufflingViewController.m */,
+			);
+			name = "轮播";
+			sourceTree = "<group>";
+		};
 		EB869A491F1DCCE90084AD2C = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +167,7 @@
 		EB869A541F1DCCE90084AD2C /* Animation_Conclusion */ = {
 			isa = PBXGroup;
 			children = (
+				EB61DFB31F2040D000C21C98 /* 轮播 */,
 				EB2CEA011F1EFD5B001C7923 /* MoveByCGAffineTransform */,
 				EB869AA81F1E11390084AD2C /* 视图动画 */,
 				EB869A991F1DFAB70084AD2C /* CatranstionAnimation */,
@@ -403,6 +416,7 @@
 				EB869A5A1F1DCCE90084AD2C /* AppDelegate.m in Sources */,
 				EB869A9C1F1DFAF00084AD2C /* CATranstionViewController.m in Sources */,
 				EB869AAB1F1E114A0084AD2C /* JLAnimatedImagesView.m in Sources */,
+				EB61DFB61F20413200C21C98 /* ShufflingViewController.m in Sources */,
 				EB869AAE1F1E12040084AD2C /* ImageViewController.m in Sources */,
 				EB869AB11F1E1F430084AD2C /* LHAnimatedImagesView.m in Sources */,
 				EB869A8B1F1DCD680084AD2C /* CircleViewController.m in Sources */,
