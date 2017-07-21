@@ -13,6 +13,7 @@
 #import "CATranstionViewController.h"
 #import "ImageViewController.h"
 #import "CGAffineViewController.h"
+#import "ShufflingViewController.h"
 
 @interface ViewController ()
 <UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
@@ -99,6 +100,11 @@
             [self.navigationController pushViewController:cg animated:YES];
         }
             break;
+            case 5:
+        {
+            ShufflingViewController *shufflign = [[ShufflingViewController alloc]init];
+            [self.navigationController pushViewController:shufflign animated:YES];
+        }break;
         default:
             break;
     }

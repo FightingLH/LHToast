@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.animatedImagesView = [[JSAnimatedImagesView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    self.animatedImagesView = [[JSAnimatedImagesView alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 200)/2, 100, 200, 100)];
     [self.view addSubview:self.animatedImagesView];
      self.animatedImagesView.delegate = self;
     self.animatedImagesView.userInteractionEnabled = YES;
@@ -80,7 +80,7 @@
 
 - (UIImage *)animatedImagesView:(JSAnimatedImagesView *)animatedImagesView imageAtIndex:(NSUInteger)index
 {
-    return [UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpg", index + 1]];
+    return [UIImage imageNamed:[NSString stringWithFormat:@"%ld.png", index + 1]];
 }
 
 

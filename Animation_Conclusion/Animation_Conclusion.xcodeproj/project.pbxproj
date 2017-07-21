@@ -11,6 +11,9 @@
 		EB2CEA041F1EFDAA001C7923 /* CGAffineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CEA031F1EFDAA001C7923 /* CGAffineViewController.m */; };
 		EB2CEA071F1F2CF5001C7923 /* JSAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CEA051F1F2CF5001C7923 /* JSAnimatedImagesView.m */; };
 		EB61DFB61F20413200C21C98 /* ShufflingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61DFB51F20413200C21C98 /* ShufflingViewController.m */; };
+		EB61DFB91F2042F500C21C98 /* LHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61DFB81F2042F500C21C98 /* LHScrollView.m */; };
+		EB6277971F220C700033072A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6277951F220C700033072A /* 2.png */; };
+		EB6277981F220C700033072A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6277961F220C700033072A /* 1.png */; };
 		EB869A571F1DCCE90084AD2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A561F1DCCE90084AD2C /* main.m */; };
 		EB869A5A1F1DCCE90084AD2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A591F1DCCE90084AD2C /* AppDelegate.m */; };
 		EB869A5D1F1DCCE90084AD2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869A5C1F1DCCE90084AD2C /* ViewController.m */; };
@@ -28,8 +31,6 @@
 		EB869AA31F1DFDA70084AD2C /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB869A9E1F1DFDA70084AD2C /* 3.jpg */; };
 		EB869AA41F1DFDA70084AD2C /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB869A9F1F1DFDA70084AD2C /* 4.jpg */; };
 		EB869AA51F1DFDA70084AD2C /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB869AA01F1DFDA70084AD2C /* 5.jpg */; };
-		EB869AA61F1DFDA70084AD2C /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB869AA11F1DFDA70084AD2C /* 2.jpg */; };
-		EB869AA71F1DFDA70084AD2C /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB869AA21F1DFDA70084AD2C /* 1.jpg */; };
 		EB869AAB1F1E114A0084AD2C /* JLAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869AAA1F1E114A0084AD2C /* JLAnimatedImagesView.m */; };
 		EB869AAE1F1E12040084AD2C /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869AAD1F1E12040084AD2C /* ImageViewController.m */; };
 		EB869AB11F1E1F430084AD2C /* LHAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869AB01F1E1F430084AD2C /* LHAnimatedImagesView.m */; };
@@ -62,6 +63,10 @@
 		EB2CEA061F1F2CF5001C7923 /* JSAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnimatedImagesView.h; sourceTree = "<group>"; };
 		EB61DFB41F20413200C21C98 /* ShufflingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShufflingViewController.h; sourceTree = "<group>"; };
 		EB61DFB51F20413200C21C98 /* ShufflingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShufflingViewController.m; sourceTree = "<group>"; };
+		EB61DFB71F2042F500C21C98 /* LHScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHScrollView.h; sourceTree = "<group>"; };
+		EB61DFB81F2042F500C21C98 /* LHScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHScrollView.m; sourceTree = "<group>"; };
+		EB6277951F220C700033072A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		EB6277961F220C700033072A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		EB869A521F1DCCE90084AD2C /* Animation_Conclusion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation_Conclusion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB869A561F1DCCE90084AD2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB869A581F1DCCE90084AD2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,8 +98,6 @@
 		EB869A9E1F1DFDA70084AD2C /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		EB869A9F1F1DFDA70084AD2C /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		EB869AA01F1DFDA70084AD2C /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
-		EB869AA11F1DFDA70084AD2C /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		EB869AA21F1DFDA70084AD2C /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		EB869AA91F1E114A0084AD2C /* JLAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLAnimatedImagesView.h; sourceTree = "<group>"; };
 		EB869AAA1F1E114A0084AD2C /* JLAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLAnimatedImagesView.m; sourceTree = "<group>"; };
 		EB869AAC1F1E12040084AD2C /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 			children = (
 				EB61DFB41F20413200C21C98 /* ShufflingViewController.h */,
 				EB61DFB51F20413200C21C98 /* ShufflingViewController.m */,
+				EB61DFB71F2042F500C21C98 /* LHScrollView.h */,
+				EB61DFB81F2042F500C21C98 /* LHScrollView.m */,
 			);
 			name = "轮播";
 			sourceTree = "<group>";
@@ -273,11 +278,11 @@
 		EB869A9D1F1DFD9B0084AD2C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				EB6277951F220C700033072A /* 2.png */,
+				EB6277961F220C700033072A /* 1.png */,
 				EB869A9E1F1DFDA70084AD2C /* 3.jpg */,
 				EB869A9F1F1DFDA70084AD2C /* 4.jpg */,
 				EB869AA01F1DFDA70084AD2C /* 5.jpg */,
-				EB869AA11F1DFDA70084AD2C /* 2.jpg */,
-				EB869AA21F1DFDA70084AD2C /* 1.jpg */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -408,11 +413,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB869A651F1DCCE90084AD2C /* LaunchScreen.storyboard in Resources */,
+				EB6277981F220C700033072A /* 1.png in Resources */,
 				EB869A621F1DCCE90084AD2C /* Assets.xcassets in Resources */,
-				EB869AA61F1DFDA70084AD2C /* 2.jpg in Resources */,
 				EB869A601F1DCCE90084AD2C /* Main.storyboard in Resources */,
 				EB869AA51F1DFDA70084AD2C /* 5.jpg in Resources */,
-				EB869AA71F1DFDA70084AD2C /* 1.jpg in Resources */,
+				EB6277971F220C700033072A /* 2.png in Resources */,
 				EB869AA41F1DFDA70084AD2C /* 4.jpg in Resources */,
 				EB869AA31F1DFDA70084AD2C /* 3.jpg in Resources */,
 			);
@@ -494,6 +499,7 @@
 				EB61DFB61F20413200C21C98 /* ShufflingViewController.m in Sources */,
 				EB869AAE1F1E12040084AD2C /* ImageViewController.m in Sources */,
 				EB869AB11F1E1F430084AD2C /* LHAnimatedImagesView.m in Sources */,
+				EB61DFB91F2042F500C21C98 /* LHScrollView.m in Sources */,
 				EB869A8B1F1DCD680084AD2C /* CircleViewController.m in Sources */,
 				EB869A981F1DDE3A0084AD2C /* TransitionsViewController.m in Sources */,
 				EB869A941F1DDE130084AD2C /* CustomPushAnimation.m in Sources */,
