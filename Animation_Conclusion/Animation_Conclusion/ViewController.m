@@ -14,6 +14,7 @@
 #import "ImageViewController.h"
 #import "CGAffineViewController.h"
 #import "ShufflingViewController.h"
+#import "AnimationGroupController.h"
 
 @interface ViewController ()
 <UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
@@ -104,6 +105,12 @@
         {
             ShufflingViewController *shufflign = [[ShufflingViewController alloc]init];
             [self.navigationController pushViewController:shufflign animated:YES];
+        }break;
+            case 6:
+        {
+            AnimationGroupController
+            *group = [[AnimationGroupController alloc]init];
+            [self.navigationController pushViewController:group animated:YES];
         }break;
         default:
             break;

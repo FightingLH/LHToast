@@ -127,36 +127,83 @@
     [UIView animateWithDuration:self.timePerImage + kJSAnimatedImagesViewImageSwappingAnimationDuration + kMovementAndTransitionTimeOffset delay:0.0 options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationCurveEaseIn animations:^{
         NSInteger randomTranslationValueX = [[self class] randomIntBetweenNumber:0 andNumber:kJSAnimatedImagesViewImageViewsBorderOffset] - kJSAnimatedImagesViewImageViewsBorderOffset;
         NSInteger randomTranslationValueY = [[self class] randomIntBetweenNumber:0 andNumber:kJSAnimatedImagesViewImageViewsBorderOffset] - kJSAnimatedImagesViewImageViewsBorderOffset;
+        NSInteger x = arc4random()%4;
+        NSInteger y = arc4random()%4;
+        switch (x+y/2) {
+            case 0:
+            {
+                CGAffineTransform translationTransform = CGAffineTransformMakeTranslation(+randomTranslationValueX, +randomTranslationValueY);
+                
+                CGFloat randomScaleTransformValue = [[self class] randomIntBetweenNumber:115 andNumber:120]/100;
+                CGAffineTransform scaleTransform = CGAffineTransformMakeScale(randomScaleTransformValue, randomScaleTransformValue);
+                imageViewToShow.transform = CGAffineTransformConcat(scaleTransform, translationTransform);
+
+            }
+                break;
+                case 1:
+            {
+                CGAffineTransform translationTransform = CGAffineTransformMakeTranslation(+randomTranslationValueX, -randomTranslationValueY);
+                
+                CGFloat randomScaleTransformValue = [[self class] randomIntBetweenNumber:115 andNumber:120]/100;
+                CGAffineTransform scaleTransform = CGAffineTransformMakeScale(randomScaleTransformValue, randomScaleTransformValue);
+                imageViewToShow.transform = CGAffineTransformConcat(scaleTransform, translationTransform);
+
+            }break;
+                case 2:
+            {
+                CGAffineTransform translationTransform = CGAffineTransformMakeTranslation(-randomTranslationValueX, -randomTranslationValueY);
+                
+                CGFloat randomScaleTransformValue = [[self class] randomIntBetweenNumber:115 andNumber:120]/100;
+                CGAffineTransform scaleTransform = CGAffineTransformMakeScale(randomScaleTransformValue, randomScaleTransformValue);
+                imageViewToShow.transform = CGAffineTransformConcat(scaleTransform, translationTransform);
+
+            }break;
+                case 3:
+            {
+                CGAffineTransform translationTransform = CGAffineTransformMakeTranslation(-randomTranslationValueX, +randomTranslationValueY);
+                
+                CGFloat randomScaleTransformValue = [[self class] randomIntBetweenNumber:115 andNumber:120]/100;
+                CGAffineTransform scaleTransform = CGAffineTransformMakeScale(randomScaleTransformValue, randomScaleTransformValue);
+                imageViewToShow.transform = CGAffineTransformConcat(scaleTransform, translationTransform);
+
+            }break;
+            case 4: {
+                CGAffineTransform translationTransform = CGAffineTransformMakeTranslation(randomTranslationValueX, randomTranslationValueY);
+                
+                CGFloat randomScaleTransformValue = [[self class] randomIntBetweenNumber:115 andNumber:120]/100;
+                CGAffineTransform scaleTransform = CGAffineTransformMakeScale(randomScaleTransformValue, randomScaleTransformValue);
+                imageViewToShow.transform = CGAffineTransformConcat(scaleTransform, translationTransform);
+
+            }break;
+            default:
+                break;
+        }
         
-        CGAffineTransform translationTransform = CGAffineTransformMakeTranslation(randomTranslationValueX, randomTranslationValueY);
-        
-        CGFloat randomScaleTransformValue = [[self class] randomIntBetweenNumber:115 andNumber:120]/100;
-        CGAffineTransform scaleTransform = CGAffineTransformMakeScale(randomScaleTransformValue, randomScaleTransformValue);
-        imageViewToShow.transform = CGAffineTransformConcat(scaleTransform, translationTransform);
-     
     } completion:^(BOOL finished) {
     
     }];
     
     /* Fade animation */
-//    [UIView transitionWithView:imageViewToHide duration:kJSAnimatedImagesViewImageSwappingAnimationDuration options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+    [UIView transitionWithView:imageViewToHide duration:kJSAnimatedImagesViewImageSwappingAnimationDuration options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
 //        imageViewToShow.alpha = 1.0;
 //        imageViewToHide.alpha = 0.0;
-//    } completion:^(BOOL finished) {
-//        if (finished)
-//        {
-//            imageViewToHide.transform = CGAffineTransformIdentity;
-//        }
-//    }];
-
-    [UIView animateWithDuration:kJSAnimatedImagesViewImageSwappingAnimationDuration delay:kMovementAndTransitionTimeOffset options:UIViewAnimationOptionBeginFromCurrentState 
-     | UIViewAnimationCurveEaseIn animations:^{
-        imageViewToShow.alpha = 1.0;
-        imageViewToHide.alpha = 0.0;
+        
+        CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+        opacityAnimation.fromValue = [NSNumber numberWithFloat:0.0];
+        opacityAnimation.toValue = [NSNumber numberWithFloat:1.0];
+        opacityAnimation.duration = 3.0f;
+        [imageViewToShow.layer addAnimation:opacityAnimation forKey:@""];
+        
+        CABasicAnimation *opacityAnimationt = [CABasicAnimation animationWithKeyPath:@"opacity"];
+        opacityAnimationt.fromValue = [NSNumber numberWithFloat:1.0];
+        opacityAnimationt.toValue = [NSNumber numberWithFloat:0.0];
+        opacityAnimationt.duration = 3.0f;
+        [imageViewToHide.layer addAnimation:opacityAnimationt forKey:@""];
+        
     } completion:^(BOOL finished) {
         if (finished)
         {
-            imageViewToHide.transform = CGAffineTransformIdentity;
+//            imageViewToHide.transform = CGAffineTransformIdentity;
         }
     }];
 }

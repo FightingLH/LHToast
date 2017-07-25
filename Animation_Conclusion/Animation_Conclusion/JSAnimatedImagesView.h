@@ -17,7 +17,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define kJSAnimatedImagesViewDefaultTimePerImage 8.0f
+#define kJSAnimatedImagesViewDefaultTimePerImage 5.0f
 
 @protocol JSAnimatedImagesViewDelegate;
 

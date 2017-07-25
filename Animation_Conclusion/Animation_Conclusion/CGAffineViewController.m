@@ -19,31 +19,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.animatedImagesView = [[JSAnimatedImagesView alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 200)/2, 100, 200, 100)];
+    self.animatedImagesView = [[JSAnimatedImagesView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     [self.view addSubview:self.animatedImagesView];
      self.animatedImagesView.delegate = self;
     self.animatedImagesView.userInteractionEnabled = YES;
-    
-//    
-//    UIView *adView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 100)];
-//    adView.backgroundColor = [UIColor whiteColor];
-//    [self.view addSubview:adView];
-//    
-//    UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(15, 200, [UIScreen mainScreen].bounds.size.width - 30, 200)];
-//    bgView.backgroundColor = [UIColor whiteColor];
-//    [self.view addSubview:bgView];
-//    
-//    for (NSInteger i = 0; i< 5; i++) {
-//        UIButton *testBtn = [[UIButton alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width -250)/6 *(i+1)+i*50, 450, 50, 50)];
-//        testBtn.backgroundColor = [UIColor whiteColor];
-//        [testBtn setTitle:[NSString stringWithFormat:@"%ld",i] forState:
-//         UIControlStateNormal];
-//        testBtn.layer.cornerRadius = 25;
-//        testBtn.clipsToBounds = YES;
-//        [testBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//        [testBtn addTarget:self action:@selector(toNext) forControlEvents:UIControlEventTouchUpInside];
-//        [self.view addSubview:testBtn];
-//    }
+
   
     
 }

@@ -10,6 +10,7 @@
 		459BE428517035B780D5967E /* Pods_Animation_Conclusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CB4564A4513CF460F017DC /* Pods_Animation_Conclusion.framework */; };
 		EB2CEA041F1EFDAA001C7923 /* CGAffineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CEA031F1EFDAA001C7923 /* CGAffineViewController.m */; };
 		EB2CEA071F1F2CF5001C7923 /* JSAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2CEA051F1F2CF5001C7923 /* JSAnimatedImagesView.m */; };
+		EB5F95221F2589A600AF484C /* AnimationGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5F95211F2589A600AF484C /* AnimationGroupController.m */; };
 		EB61DFB61F20413200C21C98 /* ShufflingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61DFB51F20413200C21C98 /* ShufflingViewController.m */; };
 		EB61DFB91F2042F500C21C98 /* LHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61DFB81F2042F500C21C98 /* LHScrollView.m */; };
 		EB6277971F220C700033072A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6277951F220C700033072A /* 2.png */; };
@@ -61,6 +62,8 @@
 		EB2CEA031F1EFDAA001C7923 /* CGAffineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineViewController.m; sourceTree = "<group>"; };
 		EB2CEA051F1F2CF5001C7923 /* JSAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnimatedImagesView.m; sourceTree = "<group>"; };
 		EB2CEA061F1F2CF5001C7923 /* JSAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnimatedImagesView.h; sourceTree = "<group>"; };
+		EB5F95201F2589A600AF484C /* AnimationGroupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationGroupController.h; sourceTree = "<group>"; };
+		EB5F95211F2589A600AF484C /* AnimationGroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationGroupController.m; sourceTree = "<group>"; };
 		EB61DFB41F20413200C21C98 /* ShufflingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShufflingViewController.h; sourceTree = "<group>"; };
 		EB61DFB51F20413200C21C98 /* ShufflingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShufflingViewController.m; sourceTree = "<group>"; };
 		EB61DFB71F2042F500C21C98 /* LHScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHScrollView.h; sourceTree = "<group>"; };
@@ -160,6 +163,15 @@
 			name = MoveByCGAffineTransform;
 			sourceTree = "<group>";
 		};
+		EB5F951F1F25898000AF484C /* 组动画 */ = {
+			isa = PBXGroup;
+			children = (
+				EB5F95201F2589A600AF484C /* AnimationGroupController.h */,
+				EB5F95211F2589A600AF484C /* AnimationGroupController.m */,
+			);
+			name = "组动画";
+			sourceTree = "<group>";
+		};
 		EB61DFB31F2040D000C21C98 /* 轮播 */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +208,7 @@
 		EB869A541F1DCCE90084AD2C /* Animation_Conclusion */ = {
 			isa = PBXGroup;
 			children = (
+				EB5F951F1F25898000AF484C /* 组动画 */,
 				EB61DFB31F2040D000C21C98 /* 轮播 */,
 				EB2CEA011F1EFD5B001C7923 /* MoveByCGAffineTransform */,
 				EB869AA81F1E11390084AD2C /* 视图动画 */,
@@ -504,6 +517,7 @@
 				EB869A981F1DDE3A0084AD2C /* TransitionsViewController.m in Sources */,
 				EB869A941F1DDE130084AD2C /* CustomPushAnimation.m in Sources */,
 				EB869A951F1DDE130084AD2C /* CustomPopAnimation.m in Sources */,
+				EB5F95221F2589A600AF484C /* AnimationGroupController.m in Sources */,
 				EB869A571F1DCCE90084AD2C /* main.m in Sources */,
 				EB2CEA041F1EFDAA001C7923 /* CGAffineViewController.m in Sources */,
 				EB2CEA071F1F2CF5001C7923 /* JSAnimatedImagesView.m in Sources */,
