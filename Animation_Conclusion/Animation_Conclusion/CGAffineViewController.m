@@ -60,7 +60,7 @@
 
 - (UIImage *)animatedImagesView:(JSAnimatedImagesView *)animatedImagesView imageAtIndex:(NSUInteger)index
 {
-    return [UIImage imageNamed:[NSString stringWithFormat:@"%ld.png", index + 1]];
+    return [UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpg", index + 1]];
 }
 
 

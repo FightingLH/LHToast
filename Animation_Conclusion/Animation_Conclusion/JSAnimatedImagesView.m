@@ -184,26 +184,15 @@
     }];
     
     /* Fade animation */
+    
+   
     [UIView transitionWithView:imageViewToHide duration:kJSAnimatedImagesViewImageSwappingAnimationDuration options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
-//        imageViewToShow.alpha = 1.0;
-//        imageViewToHide.alpha = 0.0;
-        
-        CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-        opacityAnimation.fromValue = [NSNumber numberWithFloat:0.0];
-        opacityAnimation.toValue = [NSNumber numberWithFloat:1.0];
-        opacityAnimation.duration = 3.0f;
-        [imageViewToShow.layer addAnimation:opacityAnimation forKey:@""];
-        
-        CABasicAnimation *opacityAnimationt = [CABasicAnimation animationWithKeyPath:@"opacity"];
-        opacityAnimationt.fromValue = [NSNumber numberWithFloat:1.0];
-        opacityAnimationt.toValue = [NSNumber numberWithFloat:0.0];
-        opacityAnimationt.duration = 3.0f;
-        [imageViewToHide.layer addAnimation:opacityAnimationt forKey:@""];
-        
+        imageViewToShow.alpha = 1.0;
+        imageViewToHide.alpha = 0.0;
     } completion:^(BOOL finished) {
         if (finished)
         {
-//            imageViewToHide.transform = CGAffineTransformIdentity;
+            imageViewToHide.transform = CGAffineTransformIdentity;
         }
     }];
 }
