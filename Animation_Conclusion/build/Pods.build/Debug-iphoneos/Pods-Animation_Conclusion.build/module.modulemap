@@ -1,0 +1,6 @@
+framework module Pods_Animation_Conclusion {
+  umbrella header "Pods-Animation_Conclusion-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -15,6 +15,8 @@
 #import "CGAffineViewController.h"
 #import "ShufflingViewController.h"
 #import "AnimationGroupController.h"
+#import "MotionDesignController.h"
+
 
 @interface ViewController ()
 <UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
@@ -37,6 +39,44 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+    @try {
+        [self reloadTableView];
+    } @catch (NSException *exception) {
+        
+    } @finally {
+        
+    }
+}
+
+- (void)reloadTableView
+{
+    // 将列表变为不可见，重载数据
+    self.tableView.alpha = 0.0f;
+    [self.tableView reloadData];
+    // 存储一个时间变量，这样我就可以调整每行动画之间的延迟时间
+    CGFloat diff = .05;
+    CGFloat tableHeight = self.tableView.bounds.size.height;
+    NSArray *cells = [self.tableView visibleCells];
+    // 遍历行并将它们移动到屏幕底部
+    for (NSUInteger a = 0; a < [cells count]; a++) {
+        UITableViewCell *cell = [cells objectAtIndex:a];
+        if ([cell isKindOfClass:[UITableViewCell class]]) {
+            // 通过变换cell的Y坐标来讲其移动到屏幕底部
+//            cell.transform = CGAffineTransformMakeTranslation(cell.bounds.size.width, 0);
+             cell.transform = CGAffineTransformRotate(cell.transform, -M_PI/2);
+        }
+    }
+    // 现在所有的行都在屏幕底部了，将列表设为可见
+    self.tableView.alpha = 1.0f;
+    // 将每行动画回位置
+    for (NSUInteger b = 0; b < [cells count]; b++) {
+        UITableViewCell *cell = [cells objectAtIndex:b];
+        
+        [UIView animateWithDuration:1.6 delay:diff*b usingSpringWithDamping:0.77
+              initialSpringVelocity:0 options:0 animations:^{
+                  cell.transform = CGAffineTransformMakeTranslation(0, 0);
+              } completion:NULL];
+    }
 }
 
 
@@ -111,6 +151,11 @@
             AnimationGroupController
             *group = [[AnimationGroupController alloc]init];
             [self.navigationController pushViewController:group animated:YES];
+        }break;
+            case 7:
+        {
+            MotionDesignController *motion = [[MotionDesignController alloc]init];
+            [self.navigationController pushViewController:motion animated:YES];
         }break;
         default:
             break;

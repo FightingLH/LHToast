@@ -4,4 +4,5 @@ use_frameworks!
 
 target "Animation_Conclusion" do
 pod 'SDWebImage'
+pod 'AFNetworking'
 end

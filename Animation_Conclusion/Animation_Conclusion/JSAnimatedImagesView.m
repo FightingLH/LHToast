@@ -186,7 +186,7 @@
     /* Fade animation */
     
    
-    [UIView transitionWithView:imageViewToHide duration:kJSAnimatedImagesViewImageSwappingAnimationDuration options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+    [UIView transitionWithView:imageViewToHide duration:kJSAnimatedImagesViewImageSwappingAnimationDuration options:UIViewAnimationOptionCurveEaseInOut animations:^{
         imageViewToShow.alpha = 1.0;
         imageViewToHide.alpha = 0.0;
     } completion:^(BOOL finished) {
