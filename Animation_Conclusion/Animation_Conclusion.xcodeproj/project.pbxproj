@@ -36,6 +36,7 @@
 		EB869AAE1F1E12040084AD2C /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869AAD1F1E12040084AD2C /* ImageViewController.m */; };
 		EB869AB11F1E1F430084AD2C /* LHAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869AB01F1E1F430084AD2C /* LHAnimatedImagesView.m */; };
 		EB8E3E5B1F2AD0710051CD65 /* MotionDesignController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8E3E5A1F2AD0710051CD65 /* MotionDesignController.m */; };
+		EB9A2DD01F31621200BA5C1C /* OneImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9A2DCF1F31621200BA5C1C /* OneImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,8 @@
 		EB869AB01F1E1F430084AD2C /* LHAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHAnimatedImagesView.m; sourceTree = "<group>"; };
 		EB8E3E591F2AD0710051CD65 /* MotionDesignController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionDesignController.h; sourceTree = "<group>"; };
 		EB8E3E5A1F2AD0710051CD65 /* MotionDesignController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionDesignController.m; sourceTree = "<group>"; };
+		EB9A2DCE1F31621200BA5C1C /* OneImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneImageViewController.h; sourceTree = "<group>"; };
+		EB9A2DCF1F31621200BA5C1C /* OneImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +214,7 @@
 		EB869A541F1DCCE90084AD2C /* Animation_Conclusion */ = {
 			isa = PBXGroup;
 			children = (
+				EB9A2DCD1F3161F300BA5C1C /* 单张 */,
 				EB8E3E581F2ACF870051CD65 /* Motion-Design */,
 				EB5F951F1F25898000AF484C /* 组动画 */,
 				EB61DFB31F2040D000C21C98 /* 轮播 */,
@@ -324,6 +328,15 @@
 				EB8E3E5A1F2AD0710051CD65 /* MotionDesignController.m */,
 			);
 			name = "Motion-Design";
+			sourceTree = "<group>";
+		};
+		EB9A2DCD1F3161F300BA5C1C /* 单张 */ = {
+			isa = PBXGroup;
+			children = (
+				EB9A2DCE1F31621200BA5C1C /* OneImageViewController.h */,
+				EB9A2DCF1F31621200BA5C1C /* OneImageViewController.m */,
+			);
+			name = "单张";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,6 +543,7 @@
 				EB869A981F1DDE3A0084AD2C /* TransitionsViewController.m in Sources */,
 				EB869A941F1DDE130084AD2C /* CustomPushAnimation.m in Sources */,
 				EB8E3E5B1F2AD0710051CD65 /* MotionDesignController.m in Sources */,
+				EB9A2DD01F31621200BA5C1C /* OneImageViewController.m in Sources */,
 				EB869A951F1DDE130084AD2C /* CustomPopAnimation.m in Sources */,
 				EB5F95221F2589A600AF484C /* AnimationGroupController.m in Sources */,
 				EB869A571F1DCCE90084AD2C /* main.m in Sources */,

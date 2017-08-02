@@ -16,7 +16,7 @@
 #import "ShufflingViewController.h"
 #import "AnimationGroupController.h"
 #import "MotionDesignController.h"
-
+#import "OneImageViewController.h"
 
 @interface ViewController ()
 <UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
@@ -156,6 +156,11 @@
         {
             MotionDesignController *motion = [[MotionDesignController alloc]init];
             [self.navigationController pushViewController:motion animated:YES];
+        }break;
+            case 8:
+        {
+            OneImageViewController *one = [[OneImageViewController alloc]init];
+            [self.navigationController pushViewController:one animated:YES];
         }break;
         default:
             break;
