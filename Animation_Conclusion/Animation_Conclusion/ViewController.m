@@ -17,6 +17,8 @@
 #import "AnimationGroupController.h"
 #import "MotionDesignController.h"
 #import "OneImageViewController.h"
+#import "LHSpreadViewController.h"
+#import "XWCircleSpreadController.h"
 
 @interface ViewController ()
 <UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
@@ -162,10 +164,26 @@
             OneImageViewController *one = [[OneImageViewController alloc]init];
             [self.navigationController pushViewController:one animated:YES];
         }break;
+            
+            case 9:
+        {
+            LHSpreadViewController *p = [[LHSpreadViewController alloc]init];
+            [self presentViewController:p animated:YES completion:nil];
+        }break;
+           case 10:
+        {
+            XWCircleSpreadController *circle = [[XWCircleSpreadController alloc]init];
+            [self.navigationController pushViewController:circle animated:YES];
+        }break;
         default:
             break;
     }
 }
+- (CGRect)cellFrame
+{
+    return CGRectMake(0, 0, 50, 50);
+}
+
 - (id<UIViewControllerAnimatedTransitioning>) navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
 
 {

@@ -54,6 +54,12 @@
 		EB869AB11F1E1F430084AD2C /* LHAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB869AB01F1E1F430084AD2C /* LHAnimatedImagesView.m */; };
 		EB8E3E5B1F2AD0710051CD65 /* MotionDesignController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8E3E5A1F2AD0710051CD65 /* MotionDesignController.m */; };
 		EB9A2DD01F31621200BA5C1C /* OneImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9A2DCF1F31621200BA5C1C /* OneImageViewController.m */; };
+		EBBBCB831F39657F00BBE486 /* LHSpreadTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBBCB821F39657F00BBE486 /* LHSpreadTransition.m */; };
+		EBBBCB861F39661D00BBE486 /* LHSpreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBBCB851F39661D00BBE486 /* LHSpreadViewController.m */; };
+		EBBBCB8E1F398C6A00BBE486 /* XWCircleSpreadController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBBCB891F398C6A00BBE486 /* XWCircleSpreadController.m */; };
+		EBBBCB8F1F398C6A00BBE486 /* XWCircleSpreadPresentedController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBBCB8B1F398C6A00BBE486 /* XWCircleSpreadPresentedController.m */; };
+		EBBBCB901F398C6A00BBE486 /* XWCircleSpreadTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBBCB8D1F398C6A00BBE486 /* XWCircleSpreadTransition.m */; };
+		EBBBCB931F398CA100BBE486 /* XWInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBBCB921F398CA100BBE486 /* XWInteractiveTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +171,18 @@
 		EB8E3E5A1F2AD0710051CD65 /* MotionDesignController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionDesignController.m; sourceTree = "<group>"; };
 		EB9A2DCE1F31621200BA5C1C /* OneImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneImageViewController.h; sourceTree = "<group>"; };
 		EB9A2DCF1F31621200BA5C1C /* OneImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneImageViewController.m; sourceTree = "<group>"; };
+		EBBBCB811F39657F00BBE486 /* LHSpreadTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSpreadTransition.h; sourceTree = "<group>"; };
+		EBBBCB821F39657F00BBE486 /* LHSpreadTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHSpreadTransition.m; sourceTree = "<group>"; };
+		EBBBCB841F39661D00BBE486 /* LHSpreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSpreadViewController.h; sourceTree = "<group>"; };
+		EBBBCB851F39661D00BBE486 /* LHSpreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHSpreadViewController.m; sourceTree = "<group>"; };
+		EBBBCB881F398C6A00BBE486 /* XWCircleSpreadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCircleSpreadController.h; sourceTree = "<group>"; };
+		EBBBCB891F398C6A00BBE486 /* XWCircleSpreadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCircleSpreadController.m; sourceTree = "<group>"; };
+		EBBBCB8A1F398C6A00BBE486 /* XWCircleSpreadPresentedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCircleSpreadPresentedController.h; sourceTree = "<group>"; };
+		EBBBCB8B1F398C6A00BBE486 /* XWCircleSpreadPresentedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCircleSpreadPresentedController.m; sourceTree = "<group>"; };
+		EBBBCB8C1F398C6A00BBE486 /* XWCircleSpreadTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCircleSpreadTransition.h; sourceTree = "<group>"; };
+		EBBBCB8D1F398C6A00BBE486 /* XWCircleSpreadTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCircleSpreadTransition.m; sourceTree = "<group>"; };
+		EBBBCB911F398CA100BBE486 /* XWInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWInteractiveTransition.h; sourceTree = "<group>"; };
+		EBBBCB921F398CA100BBE486 /* XWInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWInteractiveTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +326,8 @@
 		EB869A541F1DCCE90084AD2C /* Animation_Conclusion */ = {
 			isa = PBXGroup;
 			children = (
+				EBBBCB871F398C6A00BBE486 /* CircleSpreadController */,
+				EBBBCB801F3964EC00BBE486 /* present动画效果 */,
 				EB9A2DCD1F3161F300BA5C1C /* 单张 */,
 				EB8E3E581F2ACF870051CD65 /* Motion-Design */,
 				EB5F951F1F25898000AF484C /* 组动画 */,
@@ -432,6 +452,32 @@
 				EB9A2DCF1F31621200BA5C1C /* OneImageViewController.m */,
 			);
 			name = "单张";
+			sourceTree = "<group>";
+		};
+		EBBBCB801F3964EC00BBE486 /* present动画效果 */ = {
+			isa = PBXGroup;
+			children = (
+				EBBBCB811F39657F00BBE486 /* LHSpreadTransition.h */,
+				EBBBCB821F39657F00BBE486 /* LHSpreadTransition.m */,
+				EBBBCB841F39661D00BBE486 /* LHSpreadViewController.h */,
+				EBBBCB851F39661D00BBE486 /* LHSpreadViewController.m */,
+			);
+			name = "present动画效果";
+			sourceTree = "<group>";
+		};
+		EBBBCB871F398C6A00BBE486 /* CircleSpreadController */ = {
+			isa = PBXGroup;
+			children = (
+				EBBBCB911F398CA100BBE486 /* XWInteractiveTransition.h */,
+				EBBBCB921F398CA100BBE486 /* XWInteractiveTransition.m */,
+				EBBBCB881F398C6A00BBE486 /* XWCircleSpreadController.h */,
+				EBBBCB891F398C6A00BBE486 /* XWCircleSpreadController.m */,
+				EBBBCB8A1F398C6A00BBE486 /* XWCircleSpreadPresentedController.h */,
+				EBBBCB8B1F398C6A00BBE486 /* XWCircleSpreadPresentedController.m */,
+				EBBBCB8C1F398C6A00BBE486 /* XWCircleSpreadTransition.h */,
+				EBBBCB8D1F398C6A00BBE486 /* XWCircleSpreadTransition.m */,
+			);
+			path = CircleSpreadController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,6 +672,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBBBCB931F398CA100BBE486 /* XWInteractiveTransition.m in Sources */,
 				EB38EF2D1F347C270044D4FE /* WXSTransitionManager+CoverAnimation.m in Sources */,
 				EB38EF361F347C270044D4FE /* WXSTransitionManager.m in Sources */,
 				EB38EF311F347C270044D4FE /* WXSTransitionManager+PageAnimation.m in Sources */,
@@ -635,19 +682,24 @@
 				EB869A9C1F1DFAF00084AD2C /* CATranstionViewController.m in Sources */,
 				EB869AAB1F1E114A0084AD2C /* JLAnimatedImagesView.m in Sources */,
 				EB61DFB61F20413200C21C98 /* ShufflingViewController.m in Sources */,
+				EBBBCB861F39661D00BBE486 /* LHSpreadViewController.m in Sources */,
 				EB38EF291F347C270044D4FE /* UIViewController+WXSTransitionProperty.m in Sources */,
 				EB869AAE1F1E12040084AD2C /* ImageViewController.m in Sources */,
+				EBBBCB8F1F398C6A00BBE486 /* XWCircleSpreadPresentedController.m in Sources */,
 				EB869AB11F1E1F430084AD2C /* LHAnimatedImagesView.m in Sources */,
 				EB61DFB91F2042F500C21C98 /* LHScrollView.m in Sources */,
 				EB38EF331F347C270044D4FE /* WXSTransitionManager+SystermAnimation.m in Sources */,
+				EBBBCB901F398C6A00BBE486 /* XWCircleSpreadTransition.m in Sources */,
 				EB38EF321F347C270044D4FE /* WXSTransitionManager+SpreadAnimation.m in Sources */,
 				EB38EF301F347C270044D4FE /* WXSTransitionManager+InsideThenPushAnimation.m in Sources */,
 				EB869A8B1F1DCD680084AD2C /* CircleViewController.m in Sources */,
 				EB38EF351F347C270044D4FE /* WXSTransitionManager+ViewMoveAnimation.m in Sources */,
+				EBBBCB8E1F398C6A00BBE486 /* XWCircleSpreadController.m in Sources */,
 				EB38EF281F347C270044D4FE /* UIViewController+WXSTransition.m in Sources */,
 				EB869A981F1DDE3A0084AD2C /* TransitionsViewController.m in Sources */,
 				EB869A941F1DDE130084AD2C /* CustomPushAnimation.m in Sources */,
 				EB8E3E5B1F2AD0710051CD65 /* MotionDesignController.m in Sources */,
+				EBBBCB831F39657F00BBE486 /* LHSpreadTransition.m in Sources */,
 				EB9A2DD01F31621200BA5C1C /* OneImageViewController.m in Sources */,
 				EB869A951F1DDE130084AD2C /* CustomPopAnimation.m in Sources */,
 				EB5F95221F2589A600AF484C /* AnimationGroupController.m in Sources */,
